@@ -6,7 +6,7 @@ import {
   TableRow,
   TableBody,
 } from "grommet";
-export default function BoxScore({ home, away }) {
+export default function MLBBoxScore({ home, away }) {
   return (
     <Card width="100%" background="white" overflow="scroll">
       <Table>

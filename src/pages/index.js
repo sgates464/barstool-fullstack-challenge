@@ -1,6 +1,7 @@
 import IconBxBaseball from "@/components/IconBxBaseball";
 import IconBxBasketball from "@/components/IconBxBasketball";
 import MLB from "@/components/MLB/MLB";
+import NBA from "@/components/NBA/NBA";
 import TabSelection from "@/components/TabSelection";
 import { Tabs, Box, Tab } from "grommet";
 import { useState } from "react";
@@ -11,7 +12,7 @@ export default function Home() {
     <>
       <TabSelection index={index} setIndex={setIndex} />
       <Box pad={{ horizontal: "small" }}>
-        {index === "MLB" ? <MLB /> : <div></div>}
+        {index === "MLB" ? <MLB /> : <NBA />}
       </Box>
     </>
   );
